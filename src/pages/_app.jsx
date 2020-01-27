@@ -47,6 +47,10 @@ export default class MyApp extends App {
 
           <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap' />
           <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:300&display=swap' />
+
+          <script type='text/javascript'>{`
+            window.$crisp=[];window.CRISP_WEBSITE_ID="d9376895-0c26-4291-810c-b073cbc3f8fe";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+          `}</script>
         </Head>
 
         <AppBar position='static' style={{ display: 'none' }}>
