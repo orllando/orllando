@@ -1,0 +1,30 @@
+{
+  "name": "orllando.com",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orllando/orllando.git"
+  },
+  "author": {
+    "name": "Orlando Ureta",
+    "email": "orlando.ureta@gmail.com",
+    "url": "https://orllando.com"
+  },
+  "homepage": "https://orllando.com",
+  "scripts": {
+    "start": "next",
+    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && touch out/CNAME && echo \"orllando.com\" >> out/CNAME && gh-pages -d out -t && rm -rf out"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.8.3",
+    "@material-ui/icons": "^4.5.1",
+    "next": "^9.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-define": "^2.0.0",
+    "gh-pages": "^2.2.0",
+    "rimraf": "^3.0.0"
+  }
+}
